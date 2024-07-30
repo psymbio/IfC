@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "python starter"
+
+[packages]
+nitric = "*"
+
+[scripts]
+dev = "watchmedo auto-restart -p '*.py' -R python -- -u"
+
+[dev-packages]
+watchdog = "*"
